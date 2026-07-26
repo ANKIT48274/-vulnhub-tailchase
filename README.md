@@ -4,7 +4,7 @@
 **Format:** OVA (VirtualBox)
 
 ## 📥 Download
-**[⬇ Download from VulnHub](https://vulnhub.com)** *(Coming soon)*
+**[⬇ Download from Mega](https://mega.nz/file/iY5XyIDb#948dXI7bn1ujucYPNrH4X-AbYdeWcZdJAEqr1fBYJoI)**
 
 **SHA256:** `59ab0e0b5037fc077f14d4091c016a5f95676c4d92d667d905c0ceeff237e9d8`
 
