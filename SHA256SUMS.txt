@@ -1,0 +1,4 @@
+# TailChase VM v1.0 - SHA256 Checksums
+# Author: Ankit Patidar
+
+TailChase_v1.0.ova  SHA256: 59ab0e0b5037fc077f14d4091c016a5f95676c4d92d667d905c0ceeff237e9d8

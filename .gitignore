@@ -1,0 +1,20 @@
+# TailChase VM Project
+
+# OVA file (too large for git - use Git LFS or GitHub Releases)
+*.ova
+*.vmdk
+*.ovf
+*.vdi
+
+# Python
+__pycache__/
+*.pyc
+venv/
+.env
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Build artifacts
+/tmp/

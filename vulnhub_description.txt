@@ -1,0 +1,70 @@
+Name: TailChase: 1
+Author: Ankit Patidar
+Series: Callahan Security Universe
+Difficulty: Medium (OSCP-level)
+Type: Boot2Root
+Format: OVA (VirtualBox)
+DHCP: Yes (Host-Only)
+Flags: user.txt + root.txt
+Tags: linux, debian, medium, oscp, network-services, smb, ftp, flask, race-condition
+
+Description:
+============
+Introducing "TailChase" - an OSCP-level medium difficulty CTF VM by Ankit Patidar.
+
+Story:
+------
+TailChase Software Solutions - a growing tech company. DevOps, a brilliant
+but disgruntled systems engineer, was fired for exposing security flaws.
+Before leaving, he planted backdoors, hidden services, and intentional
+vulnerabilities across the infrastructure.
+
+SecOps and Sarah are trying to trace his footprints, but the damage is done.
+You are hired as an external auditor to infiltrate the system, find DevOps's
+backdoors, and recover the evidence.
+
+"Even a blind cat catches a mouse sometimes."
+
+Services:
+--------
+- FTP (21) - Anonymous file sharing with misdirection clues
+- SSH (22) - Remote access with encrypted keys
+- HTTP (80) - Full corporate website + vulnerable client portal
+- SMB (139/445) - Internal file shares with audit reports
+- SMTP (25) - Internal mail
+- Custom (8080) - Backdoor command execution service
+
+Attack Chain:
+------------
+1. Recon - Network scanning, service enumeration
+2. FTP - Anonymous access, hidden files, base64 encoded hints
+3. SMB - Guest share enumeration, audit reports, leaked info
+4. Web App - Flask portal with timing side-channel, LFI, debug endpoints
+5. Database - SQLite extraction, SSH key recovery, passphrase cracking
+6. Backdoor Service - Command injection on port 8080
+7. SUID Binary - Race condition (TOCTOU) exploitation for root
+
+Techniques Used:
+---------------
+- Timing side-channel attacks
+- Path traversal / LFI
+- Werkzeug debug console exploitation
+- SSH key cracking (ssh2john)
+- SMB enumeration
+- SUID binary reverse engineering
+- TOCTOU / Race condition exploit
+- Command injection
+
+Screenshots:
+-----------
+(Will be added to writeup)
+
+Walkthrough:
+-----------
+Official writeup available in the GitHub release.
+
+Notes:
+-----
+- The VM uses DHCP on Host-Only adapter (192.168.56.0/24)
+- Multiple exploitation paths available
+- OSCP-style enumeration required
