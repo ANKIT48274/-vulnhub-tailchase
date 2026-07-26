@@ -6,8 +6,6 @@
 ## 📥 Download
 **[⬇ Download from Mega](https://mega.nz/file/iY5XyIDb#948dXI7bn1ujucYPNrH4X-AbYdeWcZdJAEqr1fBYJoI)**
 
-**SHA256:** `59ab0e0b5037fc077f14d4091c016a5f95676c4d92d667d905c0ceeff237e9d8`
-
 ## 📖 Story
 TailChase Software Solutions — a growing tech company. DevOps was fired for exposing security flaws. Before leaving, he planted backdoors everywhere. Your mission: infiltrate, trace his footprints, recover the evidence.
 
